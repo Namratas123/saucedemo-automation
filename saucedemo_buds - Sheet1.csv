@@ -1,0 +1,20 @@
+Bug ID,Title,User,Module,Severity,Priority,Steps to Reproduce,Expected Result,Actual Result,Impact
+BUG-001,Login error message is not fully visible,Invalid credentials,Login / UI,Low,Medium,"1. Open SauceDemo 
+2. Enter an invalid username and password 
+3. Click Login 
+4. Observe the displayed error message",The complete error message should be clearly visible to the user,The login error message is partially hidden/not fully visible,"Users may not be able to read the complete error message, making it dificult to understand the login failure"
+BUG-002,Product page UI elements are misaligned,visual_user,Products / UI,Low,Medium,"1. Login with visual_user 
+2. Navigate to the Products page 
+3. Observe the product cards and navigation elements","Add to Cart buttons, shopping cart icon, and menu icon should be properly and consistently aligned","UI elements are incorrectly aligned, including the bottom-right Add to Cart button, shopping cart icon, and menu icon",Reduces UI consistency and negatively affects the overall user experience
+BUG-003,Product price changes after clicking All Items,visual_user,Product Catalog / Pricing,High,High,"1. Login with visual_user 
+2. see the price of the affected product 
+3. Click All Items 
+4. Check the same product price",The product price should remain consistent when navigating back to All Items,The product price changes after clicking All Items,Incorrect pricing can mislead users and may result in incorrect purchase or checkout amounts
+BUG-004,Product image and details do not match for problem_user,problem_user,Product Catalog / Product Details,High,High,"1. Login with problem_user 
+2. Open the Products page 
+3. Compare product names and images 
+4. Click an affected product 
+5. Compare the listing with the Product Details page","Product image, name, and details should correspond to the selected product",The product image/details shown on the product listing do not correctly match the product information shown on the Product Details page,"Users may be shown incorrect product information, reducing trust and potentially affecting purchase decisions"
+BUG-005,Performance glitch user is redirected to a product details page after login,performance_glitch_user,Login / Navigation,Medium,High,"1. Open SauceDemo 
+2. Login with performance_glitch_user 
+3. Observe the page displayed immediately after successful login",User should be redirected to the Products/Home page after successful login,User is redirected directly to a Product Details page instead of the expected Products/Home page,Unexpected navigation can confuse users and disrupt the normal post-login user journey
